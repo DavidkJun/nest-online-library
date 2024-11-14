@@ -7,7 +7,7 @@ export class BooksController {
 
   @Get(':book')
   sendBook(@Param('book') book: string, @Res() res: Response){
-    const filePath = join(__dirname, '..', '..', 'client', book, 'index.html' );
+    const filePath = join(__dirname, '..', '..', 'client', book, 'booksPage.html' );
     res.sendFile(filePath)
   }
 }
