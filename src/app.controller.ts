@@ -11,7 +11,7 @@ export class AppController {
   }
   @Get('books')
   getBooksPage(@Res() res: Response ): void {
-    const filePath = join(__dirname, '..', '..', 'client', 'booksPage.html');
+    const filePath = join(__dirname, '..', 'client', 'booksPage.html');
     res.sendFile(filePath);
   }
 }
