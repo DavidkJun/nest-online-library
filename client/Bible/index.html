@@ -7,13 +7,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bible</title>
 </head>
+
 <body>
 
+<h1>Bible</h1>
+<canvas id="pdf-canvas"></canvas>
+<div>
+  <button onclick="previousPage()">Попередня сторінка</button>
+  <button onclick="nextPage()">Наступна сторінка</button>
+  <p>Сторінка: <span id="page-num"></span> / <span id="page-count"></span></p>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
-
-<div> You are reading Bible</div>
-
-
-
+<script src="pdfViewer.js"></script>
 </body>
+
 </html>
